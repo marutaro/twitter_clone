@@ -7,4 +7,10 @@
         android:layout_height="match_parent"
         tools:context="com.example.twitterclone.HomeActivity">
 
+    <Button
+            android:id="@+id/loginButton"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="@dimen/standard_height"
+            android:text="Logout"
+            android:onClick="onLogout"/>
 </android.support.constraint.ConstraintLayout>

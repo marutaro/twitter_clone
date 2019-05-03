@@ -1,5 +1,7 @@
 package com.example.kensuke.twitterclone
 
+import android.content.Context
+import android.content.Intent
 import android.opengl.Visibility
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -100,5 +102,9 @@ class LoginActivity : AppCompatActivity() {
         super.onStop()
         // remove Listener to start new activity after login success
         firebaseAuth.removeAuthStateListener(firebaseAuthListener)
+    }
+
+    companion object {
+        fun newIntent(context: Context) = Intent(context, LoginActivity::class.java)
     }
 }
