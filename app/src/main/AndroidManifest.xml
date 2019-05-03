@@ -10,6 +10,12 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
+                android:name="com.example.twitterclone.SignupActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
                 android:name="com.example.twitterclone.HomeActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar"

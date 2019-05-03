@@ -12,6 +12,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import com.example.twitterclone.HomeActivity
+import com.example.twitterclone.SignupActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -89,7 +90,8 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun goToSignup(v: View) {
-
+        startActivity(SignupActivity.newIntent(this))
+        finish()
     }
 
     override fun onStart() {
