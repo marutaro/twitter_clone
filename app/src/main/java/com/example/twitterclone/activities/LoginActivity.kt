@@ -2,7 +2,6 @@ package com.example.kensuke.twitterclone
 
 import android.content.Context
 import android.content.Intent
-import android.opengl.Visibility
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TextInputLayout
@@ -11,8 +10,8 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
-import com.example.twitterclone.HomeActivity
-import com.example.twitterclone.SignupActivity
+import com.example.twitterclone.activities.HomeActivity
+import com.example.twitterclone.activities.SignupActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 

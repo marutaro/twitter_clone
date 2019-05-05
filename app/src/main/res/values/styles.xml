@@ -23,4 +23,10 @@
     <style name="LinkText">
         <item name="android:textColor">@color/blue</item>
     </style>
+
+    <style name="Heading">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>
