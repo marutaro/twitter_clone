@@ -45,6 +45,10 @@ class HomeActivity : AppCompatActivity() {
             }
 
         })
+
+        logo.setOnClickListener {
+            startActivity(ProfileActivity.newIntent(this))
+        }
     }
 
     fun onLogout(v: View) {
