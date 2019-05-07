@@ -24,7 +24,7 @@ class HomeActivity : AppCompatActivity() {
     private val homeFragment = HomeFragment()
     private val searchFragment = SearchFragment()
     private val myActivityFragment = MyActivityFragment()
-    private val userId = FirebaseAuth.getInstance().currentUser?.uid
+    private var userId = FirebaseAuth.getInstance().currentUser?.uid
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,14 +51,11 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    fun onLogout(v: View) {
-        firebaseAuth.signOut()
-        startActivity(LoginActivity.newIntent(this))
-        finish()
-    }
-
     override fun onResume() {
         super.onResume()
+
+        userId = FirebaseAuth.getInstance().currentUser?.uid
+
         if (userId == null) {
             startActivity(LoginActivity.newIntent(this))
             finish()
