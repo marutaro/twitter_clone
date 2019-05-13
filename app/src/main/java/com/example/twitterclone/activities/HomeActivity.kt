@@ -55,6 +55,10 @@ class HomeActivity : AppCompatActivity() {
         logo.setOnClickListener {
             startActivity(ProfileActivity.newIntent(this))
         }
+
+        fab.setOnClickListener {
+            startActivity(TweetActivity.newIntent(this, userId, user?.username))
+        }
     }
 
     override fun onResume() {
