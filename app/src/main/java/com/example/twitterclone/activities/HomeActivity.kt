@@ -59,6 +59,9 @@ class HomeActivity : AppCompatActivity() {
         fab.setOnClickListener {
             startActivity(TweetActivity.newIntent(this, userId, user?.username))
         }
+
+
+        homeProgressLayout.setOnTouchListener { view, motionEvent -> true }
     }
 
     override fun onResume() {
